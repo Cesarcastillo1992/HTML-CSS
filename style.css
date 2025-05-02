@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(28, 8, 48);
+    padding: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(to top, rgb(62, 62, 238), rgb(225, 13, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 1px rgb(26, 14, 77));
+}
+
+h2 {
+    text-align: center;
+    background: linear-gradient(to top, rgb(62, 62, 238), rgb(225, 13, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 1px rgb(26, 14, 77));
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    
+}
+
+header div a{
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 30px;
+    background: linear-gradient(to top, rgb(62, 62, 238), rgb(225, 13, 13));
+}
+
+hr{
+    margin: 15px 0 15px 0;
+    
+}
+
+ul {
+    margin: 15px 0 15px 70px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.img-border:hover{
+    box-shadow: 1px 1px 20px goldenrod;
+    
+}
+
+li a {
+    background: linear-gradient(to top, rgb(62, 62, 238), rgb(225, 13, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+li{
+    padding: 6px 2px 6px 2px;
+}
+
+h3{
+    background: linear-gradient(to top, rgb(62, 62, 238), rgb(225, 13, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p{
+    color: rgb(203, 221, 221);
+    margin: 10px 10px 10px 10px;
+}
+
+.text-center{
+    text-align: center;
+    font-size: 20px;
+    background: linear-gradient(to top, rgb(62, 62, 238), rgb(225, 13, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.redes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.img{
+    width: 100%;
+}
+
+.escudos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.image1{
+    width: 250px;
+    height: 50px;
+    
+}
+
+.text-center-players {
+    text-align: center;
+    background: linear-gradient(to top, rgb(62, 62, 238), rgb(225, 13, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.columns {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.sponsor{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.start {
+    margin-left: 95%;
+    color: rgb(255, 255, 0);
+    text-decoration: none;
+}
+
+.columns-pestañas {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+main div img{
+    width: 410px;
+}
+
+@media (max-width: 1024px){
+    footer div a img{
+        width: 100px;
+    } main .sponsor img {
+        width: 200px;
+    } main .columns-pestañas img{
+        width: 450px;
+    }
+}
+
+@media (max-width: 768px){
+    main .jugadores div img{
+        width: 320px;
+    } footer div a img{
+        width: 80px;
+    } main .sponsor img {
+        width: 160px;
+    } main .columns-pestañas img{
+        width: 320px;
+    }
+
+}
+
+@media (max-width: 425px){
+    header div .image1{
+        width: 200px;
+        height: auto;
+    } header div .image2{
+        width: 45px;
+    } header h1{
+        font-size: 24px;
+    } header div h2{
+        font-size: 20px;
+    } header .menu a{
+        padding: 12px;
+        font-size: 12px;
+    } main ul{
+        margin-left: 30px;
+        text-align: left;
+    } main ul li a{
+        font-size: 20px;
+    } main div h2{
+        font-size: 20px;
+    } main div h3{
+        font-size: 12px;
+    } main div p{
+        font-size: 12px;
+    } main div .text-center{
+        font-size: 16px;
+    } main .jugadores div img{
+        width: 160px;
+    } main .start small{
+        font-size: 10px;
+    } main .sponsor img {
+        width: 60px;
+    } main .columns-pestañas img{
+        width: 160px;
+    } footer div a img{
+        width: 40px;
+    } 
+}
+
+@media (max-width: 375px){
+    header div .image1{
+        width: 160px;
+        height: auto;
+    } header div .image2{
+        width: 35px;
+    } header h1{
+        font-size: 20px;
+    } header div h2{
+        font-size: 16px;
+    } main ul{
+        margin-left: 20px;
+        text-align: left;
+    } main ul li a{
+        font-size: 16px;
+    } main div h2{
+        font-size: 16px;
+    } main div h3{
+        font-size: 10px;
+    } main div p{
+        font-size: 10px;
+    } main div .text-center{
+        font-size: 12px;
+    } main .jugadores div img{
+        width: 140px;
+    } main .sponsor img {
+        width: 60px;
+    } main .start small{
+        font-size: 8px;
+    } main .columns-pestañas img{
+        width: 140px;
+    }
+}
+
+@media (max-width: 320px){
+    header div .image1{
+        width: 120px;
+        height: auto;
+    } header div .image2{
+        width: 25px;
+    } header h1{
+        font-size: 16px;
+    } header div h2{
+        font-size: 12px;
+    } header .menu a{
+        padding: 10px;
+        font-size: 10px;
+    } main ul{
+        margin-left: 20px;
+        text-align: left;
+    } main ul li a{
+        font-size: 16px;
+    } main div h2{
+        font-size: 16px;
+    } main div h3{
+        font-size: 10px;
+    } main div p{
+        font-size: 10px;
+    } main div .text-center{
+        font-size: 12px;
+    } main .jugadores div img{
+        width: 115px;
+    } main .sponsor img {
+        width: 50px;
+    } main .columns-pestañas img{
+        width: 110px;
+    } footer div a img{
+        width: 30px;
+    } 
+}
+
