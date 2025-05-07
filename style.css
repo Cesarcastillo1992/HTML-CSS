@@ -17,17 +17,19 @@ h1 {
     font-size: 50px;
     text-align: center;
     background: linear-gradient(to bottom, rgb(62, 62, 238), rgb(225, 13, 13));
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 1px rgb(26, 14, 77));
+    color: transparent;
+    filter: drop-shadow(0 0 1px rgb(248, 252, 0));
 }
 
 h2 {
     text-align: center;
     background: linear-gradient(to bottom, rgb(62, 62, 238), rgb(225, 13, 13));
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 1px rgb(26, 14, 77));
+    color: transparent;
+    filter: drop-shadow(0 0 1px rgb(248, 252, 0));
 }
 
 .menu{
@@ -66,8 +68,9 @@ ul {
 
 li a {
     background: linear-gradient(to bottom, rgb(62, 62, 238), rgb(225, 13, 13));
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 li{
@@ -76,8 +79,9 @@ li{
 
 h3{
     background: linear-gradient(to bottom, rgb(62, 62, 238), rgb(225, 13, 13));
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 p{
@@ -89,8 +93,9 @@ p{
     text-align: center;
     font-size: 20px;
     background: linear-gradient(to bottom, rgb(62, 62, 238), rgb(225, 13, 13));
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .redes{
@@ -125,8 +130,9 @@ p{
 .text-center-players {
     text-align: center;
     background: linear-gradient(to bottom, rgb(62, 62, 238), rgb(225, 13, 13));
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .columns {
