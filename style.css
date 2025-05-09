@@ -13,14 +13,33 @@ body{
     padding: 40px;
 }
 
-h1 {
+.text-flicker-in-glow {
+	-webkit-animation: text-flicker-in-glow 4s linear both;
+    animation: text-flicker-in-glow 4s linear both;
     font-size: 50px;
     text-align: center;
     background: linear-gradient(to bottom, rgb(62, 62, 238), rgb(225, 13, 13));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    filter: drop-shadow(0 0 1px rgb(248, 252, 0));
+}
+
+@keyframes text-flicker-in-glow {
+    0% {
+      opacity: 0;
+    } 25% {
+      opacity: 0;
+      text-shadow: none;
+    } 50% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    } 75% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    } 100% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
 }
 
 h2 {
@@ -52,7 +71,6 @@ header div a{
 
 hr{
     margin: 15px 0 15px 0;
-    
 }
 
 ul {
@@ -63,7 +81,6 @@ ul {
 
 .img-border:hover{
     box-shadow: 1px 1px 20px goldenrod;
-    
 }
 
 li a {
@@ -124,7 +141,6 @@ p{
 .image1{
     width: 250px;
     height: 50px;
-    
 }
 
 .text-center-players {
@@ -133,6 +149,32 @@ p{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.vibrate-1:hover {
+	-webkit-animation: vibrate-1 0.3s linear both;
+    animation: vibrate-1 0.3s linear both;
+}
+@keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    } 20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    } 40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    } 60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    } 80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    } 100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
 }
 
 .columns {
@@ -159,10 +201,13 @@ p{
 }
 
 .columns-pestañas {
+    width: 100%;
     display: flex;
-    gap: 10px;
+    align-items: center;
+    flex-direction: row;
     justify-content: center; 
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 main div img{
